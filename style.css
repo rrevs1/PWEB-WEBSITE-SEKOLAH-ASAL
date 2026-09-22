@@ -1,0 +1,433 @@
+:root {
+    --bg-krem: #fdfaf0;
+    --krem-gelap: #f4ebd0;
+    --merah-marun: #b30000;
+    --kuning-emas: #ffcc00;
+    --teks-gelap: #333333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-krem);
+    color: var(--teks-gelap);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: var(--bg-krem);
+    border-bottom: 4px solid var(--kuning-emas);
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-area h2 {
+    font-size: 18px;
+    color: var(--merah-marun);
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--merah-marun);
+    font-size: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease; 
+}
+
+.nav-menu a:hover {
+    color: var(--kuning-emas); 
+}
+
+.hero-section {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0) 70%), url('2.JPG');
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+    padding: 0 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hero-text {
+    background-color: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    text-align: left;
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    margin: 0 0 15px 0;
+    color: #ffffff;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-text .subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #f0f0f0;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 1.6;
+}
+
+.btn-hero {
+    text-decoration: none;
+    background-color: var(--kuning-emas);
+    padding: 12px 35px;
+    color: var(--teks-gelap);
+    font-weight: bold;
+    border-radius: 25px; 
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-hero:hover {
+    background-color: #e6b800;
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    text-decoration: none;
+    border: 2px solid var(--merah-marun);
+    padding: 10px 20px;
+    color: var(--merah-marun);
+    font-weight: bold;
+    border-radius: 25px; 
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background-color: var(--merah-marun);
+    color: white;
+}
+
+.profil-section {
+    padding: 50px 40px;
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    color: var(--merah-marun);
+}
+
+.profil-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.profil-box {
+    flex: 1;
+    background-color: white;
+    padding: 40px 20px;
+    border-radius: 8px;
+    border-top: 5px solid var(--merah-marun);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    color: var(--teks-gelap);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease; 
+}
+
+.profil-box:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.profil-box i {
+    font-size: 50px;
+    color: var(--kuning-emas);
+    margin-bottom: 20px;
+}
+
+.profil-box h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.sambutan-section {
+    display: flex;
+    padding: 50px 40px;
+    gap: 40px;
+    background-color: var(--krem-gelap);
+    align-items: center; 
+}
+
+.sambutan-text {
+    flex: 2;
+}
+
+.sambutan-text p {
+    margin-bottom: 15px;
+}
+
+.section-title.left-align {
+    text-align: left;
+}
+
+.kepsek-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    justify-content: flex-start;
+}
+
+.kepsek-foto {
+    background-color: white;
+    width: 250px;
+    height: 300px;
+    margin-bottom: 15px; 
+    border: 3px solid var(--kuning-emas);
+    border-radius: 10px; 
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.kepsek-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.kepsek-nama {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    color: var(--merah-marun);
+    width: 100%;
+}
+
+.visi-misi-wrapper {
+    background-color: var(--bg-krem);
+    padding: 50px 40px;
+}
+
+.visi-misi-container {
+    display: flex;
+    gap: 40px;
+}
+
+.box {
+    flex: 1;
+    background-color: white;
+    border-top: 5px solid var(--kuning-emas);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: all 0.3s ease; 
+}
+
+.box:hover {
+    transform: translateY(-5px); 
+}
+
+.box h3 {
+    margin-bottom: 20px;
+    color: var(--merah-marun);
+    text-align: center;
+    border-bottom: 2px solid var(--kuning-emas);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.box ul {
+    padding-left: 20px;
+}
+
+.box ul li {
+    margin-bottom: 10px;
+}
+
+.footer-area {
+    background-color: var(--merah-marun);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 5px solid var(--kuning-emas);
+}
+
+.social-icons {
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    color: var(--kuning-emas);
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px; 
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+.footer-area p {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.banner-section {
+    background-image: url('4.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 80px 20px;
+    color: var(--bg-krem);
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.badge-judul {
+    background-color: var(--merah-marun);
+    color: white;
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 20px;
+    border: 2px solid var(--kuning-emas);
+    border-radius: 4px;
+}
+
+.jurusan-container {
+    padding: 50px 40px;
+    background-color: white;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-top: 5px solid var(--kuning-emas);
+    border-radius: 8px; 
+}
+
+.judul-jurusan {
+    color: var(--merah-marun);
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.list-jurusan {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.tabel-siswa {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.tabel-siswa th, .tabel-siswa td {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    text-align: left;
+}
+
+.tabel-siswa th {
+    background-color: var(--merah-marun);
+    color: white;
+    border-color: var(--merah-marun);
+}
+
+.kontak-container {
+    padding: 50px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.form-box {
+    background-color: var(--krem-gelap);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-top: 5px solid var(--merah-marun);
+}
+
+.form-box label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: var(--teks-gelap);
+}
+
+.form-box input[type="text"],
+.form-box input[type="email"],
+.form-box textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 14px;
+    transition: border-color 0.3s ease; 
+}
+
+.form-box input[type="text"]:focus,
+.form-box input[type="email"]:focus,
+.form-box textarea:focus {
+    border-color: var(--merah-marun);
+    outline: none;
+    box-shadow: 0 0 5px rgba(179, 0, 0, 0.2);
+}
+
+.btn-submit {
+    background-color: var(--merah-marun);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px; 
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid var(--kuning-emas);
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #8a0000;
+}
+
