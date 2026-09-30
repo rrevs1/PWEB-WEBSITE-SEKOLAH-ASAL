@@ -2,66 +2,82 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jurusan - SMAN 2 Madiun</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700&display=swap">
 </head>
 <body>
     <header class="header-container">
         <div class="logo-area">
-            <img src="logo.jpg" alt="Logo" width="45">
+            <img src="logo.jpg" alt="Logo SMA Negeri 2 Madiun" width="45" height="45">
             <h2>SMA NEGERI 2 MADIUN</h2>
         </div>
         <nav class="nav-menu">
             <a href="index.html">Home</a>
-            <a href="jurusan.html">Jurusan</a>
+            <a href="profilsekolah.html">Profil</a>
+            <a href="jurusan.html" aria-current="page">Jurusan</a>
+            <a href="prestasi.html">Prestasi</a>
             <a href="kontak.html">Kontak</a>
+            <a href="https://smanegeri2madiun.sch.id/" class="nav-ppdb" target="_blank" rel="noopener">PPDB</a>
         </nav>
     </header>
 
-    <div class="banner-section">
-            <h3>SMA NEGERI 2 KOTA MADIUN</h3>
-        <span class="badge-judul">DAFTAR JURUSAN</span>
-    </div>
+    <section class="hero-jur">
+        <div class="hero-jur-teks">
+            <h1>SMA NEGERI 2<br>KOTA MADIUN</h1>
+            <p>WIDYA TINATA AMBUKA BUDI</p>
+            <span class="badge-judul">JURUSAN</span>
+        </div>
+    </section>
 
-    <div class="jurusan-container">
-        <h3 class="judul-jurusan">DAFTAR JURUSAN</h3>
-        <p>Sekolah kami menyediakan beberapa pilihan program penjurusan berdasarkan kurikulum merdeka yaitu:</p>
-        <ul class="list-jurusan">
-            <li>Penjurusan Teknik</li>
-            <li>Penjurusan Kesehatan</li>
-            <li>Penjurusan Soshum</li>
-        </ul>
+    <section class="sec">
+        <div class="sec-inner">
+            <h2>Kurikulum Merdeka</h2>
+            <p class="sec-lead">SMA Negeri 2 Madiun menerapkan Kurikulum Merdeka dengan pembelajaran yang efektif, efisien, dan berbasis Teknologi Informasi dan Komunikasi.</p>
+            <ul class="kur-list">
+                <li><i class="fa-solid fa-bullseye" aria-hidden="true"></i><span>Pembelajaran yang efektif dan efisien</span></li>
+                <li><i class="fa-solid fa-laptop-code" aria-hidden="true"></i><span>Berbasis teknologi informasi dan komunikasi</span></li>
+                <li><i class="fa-solid fa-heart" aria-hidden="true"></i><span>Penguatan iman, takwa, dan budi pekerti luhur</span></li>
+            </ul>
+        </div>
+    </section>
 
-        <br><br>
+    <section class="sec sec-putih">
+        <div class="sec-inner">
+            <h2>Jurusan Sekolah</h2>
+            <p class="sec-lead">Sekolah kami menyediakan beberapa pilihan program penjurusan berdasarkan Kurikulum Merdeka, yaitu:</p>
+            <div class="jur-grid">
+                <article class="jur-card"><span class="jur-ikon"><i class="fa-solid fa-microchip" aria-hidden="true"></i></span><h3>Penjurusan Teknik</h3><p>Program penjurusan Kurikulum Merdeka</p></article>
+                <article class="jur-card"><span class="jur-ikon"><i class="fa-solid fa-stethoscope" aria-hidden="true"></i></span><h3>Penjurusan Kesehatan</h3><p>Program penjurusan Kurikulum Merdeka</p></article>
+                <article class="jur-card"><span class="jur-ikon"><i class="fa-solid fa-globe" aria-hidden="true"></i></span><h3>Penjurusan Soshum</h3><p>Program penjurusan Kurikulum Merdeka</p></article>
+            </div>
+        </div>
+    </section>
 
-        <h3 class="judul-jurusan">JUMLAH SISWA</h3>
-        <table class="tabel-siswa">
-            <tr>
-                <th>Jurusan</th>
-                <th>Jumlah Siswa</th>
-            </tr>
-            <tr>
-                <td>Penjurusan Teknik</td>
-                <td>450 Siswa</td>
-            </tr>
-            <tr>
-                <td>Penjurusan Kesehatan</td>
-                <td>500 Siswa</td>
-            </tr>
-            <tr>
-                <td>Penjurusan Soshum</td>
-                <td>350 Siswa</td>
-            </tr>
-        </table>
-    </div>
+    <section class="sec">
+        <div class="sec-inner">
+            <h2>Total Siswa</h2>
+            <div class="tot">
+                <div class="tot-angka"><strong>1.300</strong><span>siswa di seluruh penjurusan</span></div>
+                <div class="tot-bar">
+                <div class="bar-row"><div class="bar-info"><span>Penjurusan Teknik</span><span>450 Siswa</span></div><div class="bar" aria-hidden="true"><span style="width:34.6%"></span></div></div>
+                <div class="bar-row"><div class="bar-info"><span>Penjurusan Kesehatan</span><span>500 Siswa</span></div><div class="bar" aria-hidden="true"><span style="width:38.5%"></span></div></div>
+                <div class="bar-row"><div class="bar-info"><span>Penjurusan Soshum</span><span>350 Siswa</span></div><div class="bar" aria-hidden="true"><span style="width:26.9%"></span></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer-area">
         <div class="social-icons">
-            <a href="https://www.youtube.com/@smadamadiunofficial" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a>
+            <a href="https://www.youtube.com/@smadamadiunofficial" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i> YouTube</a>
             <a href="mailto:admin@smanegeri2madiun.sch.id"><i class="fa-solid fa-envelope"></i> Email</a>
             <a href="tel:0351453542"><i class="fa-solid fa-phone"></i> Telepon</a>
-            <a href="https://www.instagram.com/smadamadiunofficial/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="https://www.instagram.com/smadamadiunofficial/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> Instagram</a>
         </div>
         <p>&copy; 2026 SMA Negeri 2 Madiun. All rights reserved.</p>
     </footer>
